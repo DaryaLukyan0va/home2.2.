@@ -1,18 +1,17 @@
 public class Main {
     public static void main(String[] args) {
     int first = 100;
-    int topUpBalance = 10000;
-    int bonus = (topUpBalance / 100);
-    int i = (bonus + first + topUpBalance);
-    int total = (topUpBalance + first);
+    int topUpBalance = 10;
+    int bonus = 0;
 
-            if ( topUpBalance > 1000 ) {
-                System.out.println("У Вас на счету " + i + "руб.");
-                System.out.println("Бонусы " + bonus + "руб.");
-            } else {
+           if ( topUpBalance > 1000 ) {
+               bonus = (topUpBalance / 100);}
 
-                System.out.println("У Вас на счету " + total + "руб.");}
+    int total = (bonus + first + topUpBalance);
 
-        }
+        System.out.println("У Вас на счету " + total + "руб.");
+        System.out.println("Бонусы " + bonus + "руб.");
+
     }
+}
 
